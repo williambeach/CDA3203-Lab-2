@@ -1,0 +1,457 @@
+Fitter report for FullAdder8Bit_BeachWilliam
+Thu Nov 03 14:35:51 2022
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Fitter Summary
+  3. Fitter Settings
+  4. Parallel Compilation
+  5. Pin-Out File
+  6. Fitter Resource Usage Summary
+  7. Input Pins
+  8. Output Pins
+  9. All Package Pins
+ 10. I/O Standard
+ 11. Dedicated Inputs I/O
+ 12. Output Pin Default Load For Reported TCO
+ 13. Fitter Resource Utilization by Entity
+ 14. Non-Global High Fan-Out Signals
+ 15. Interconnect Usage Summary
+ 16. LAB Macrocells
+ 17. Parallel Expander
+ 18. Shareable Expander
+ 19. Logic Cell Interconnection
+ 20. Fitter Device Options
+ 21. Fitter Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------+
+; Fitter Summary                                                  ;
++-----------------------+-----------------------------------------+
+; Fitter Status         ; Successful - Thu Nov 03 14:35:51 2022   ;
+; Quartus II Version    ; 9.1 Build 222 10/21/2009 SJ Web Edition ;
+; Revision Name         ; FullAdder8Bit_BeachWilliam              ;
+; Top-level Entity Name ; fullAdder8Bit_BeachWilliam              ;
+; Family                ; MAX3000A                                ;
+; Device                ; EPM3064ALC44-10                         ;
+; Timing Models         ; Final                                   ;
+; Total macrocells      ; 20 / 64 ( 31 % )                        ;
+; Total pins            ; 30 / 34 ( 88 % )                        ;
++-----------------------+-----------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Fitter Settings                                                                                              ;
++----------------------------------------------------------------------------+-----------------+---------------+
+; Option                                                                     ; Setting         ; Default Value ;
++----------------------------------------------------------------------------+-----------------+---------------+
+; Device                                                                     ; EPM3064ALC44-10 ;               ;
+; Use smart compilation                                                      ; Off             ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On              ; On            ;
+; Enable compact report table                                                ; Off             ; Off           ;
+; Use TimeQuest Timing Analyzer                                              ; Off             ; Off           ;
+; Optimize Timing for ECOs                                                   ; Off             ; Off           ;
+; Regenerate full fit report during ECO compiles                             ; Off             ; Off           ;
+; Optimize IOC Register Placement for Timing                                 ; On              ; On            ;
+; Limit to One Fitting Attempt                                               ; Off             ; Off           ;
+; Fitter Initial Placement Seed                                              ; 1               ; 1             ;
+; Slow Slew Rate                                                             ; Off             ; Off           ;
+; Fitter Effort                                                              ; Auto Fit        ; Auto Fit      ;
+; Force Fitter to Avoid Periphery Placement Warnings                         ; Off             ; Off           ;
+; Use Best Effort Settings for Compilation                                   ; Off             ; Off           ;
++----------------------------------------------------------------------------+-----------------+---------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------+
+; Pin-Out File ;
++--------------+
+The pin-out file can be found in Z:/CDA3203/Lab2_BeachWilliam/FullAdder8Bit_BeachWilliam.pin.
+
+
++------------------------------------------------------+
+; Fitter Resource Usage Summary                        ;
++-----------------------------------+------------------+
+; Resource                          ; Usage            ;
++-----------------------------------+------------------+
+; Logic cells                       ; 20 / 64 ( 31 % ) ;
+; Registers                         ; 0 / 64 ( 0 % )   ;
+; Number of pterms used             ; 79               ;
+; User inserted logic elements      ; 0                ;
+; I/O pins                          ; 30 / 34 ( 88 % ) ;
+;     -- Clock pins                 ; 1 / 2 ( 50 % )   ;
+;     -- Dedicated input pins       ; 2 / 2 ( 100 % )  ;
+; Global signals                    ; 0                ;
+; Shareable expanders               ; 11 / 64 ( 17 % ) ;
+; Parallel expanders                ; 7 / 60 ( 12 % )  ;
+; Cells using turbo bit             ; 20 / 64 ( 31 % ) ;
+; Maximum fan-out node              ; A[0]             ;
+; Maximum fan-out                   ; 11               ;
+; Highest non-global fan-out signal ; A[0]             ;
+; Highest non-global fan-out        ; 11               ;
+; Total fan-out                     ; 161              ;
+; Average fan-out                   ; 2.64             ;
++-----------------------------------+------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                ;
++------+-------+----------+-----+-----------------------+--------------------+--------+--------------+----------------------+
+; Name ; Pin # ; I/O Bank ; LAB ; Combinational Fan-Out ; Registered Fan-Out ; Global ; I/O Standard ; Location assigned by ;
++------+-------+----------+-----+-----------------------+--------------------+--------+--------------+----------------------+
+; A[0] ; 39    ; --       ; 4   ; 11                    ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; A[1] ; 29    ; --       ; 3   ; 9                     ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; A[2] ; 27    ; --       ; 3   ; 6                     ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; A[3] ; 14    ; --       ; 2   ; 6                     ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; A[4] ; 40    ; --       ; 4   ; 5                     ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; A[5] ; 37    ; --       ; 4   ; 5                     ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; A[6] ; 1     ; --       ; --  ; 4                     ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; A[7] ; 26    ; --       ; 3   ; 4                     ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; B[0] ; 28    ; --       ; 3   ; 11                    ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; B[1] ; 18    ; --       ; 2   ; 10                    ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; B[2] ; 41    ; --       ; 4   ; 8                     ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; B[3] ; 2     ; --       ; --  ; 6                     ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; B[4] ; 19    ; --       ; 2   ; 5                     ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; B[5] ; 25    ; --       ; 3   ; 5                     ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; B[6] ; 44    ; --       ; --  ; 4                     ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; B[7] ; 34    ; --       ; 4   ; 4                     ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; Cin  ; 31    ; --       ; 3   ; 10                    ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
++------+-------+----------+-----+-----------------------+--------------------+--------+--------------+----------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                              ;
++------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+; Name ; Pin # ; I/O Bank ; LAB ; Output Register ; Slow Slew Rate ; Open Drain ; TRI Primitive ; I/O Standard ; Location assigned by ; Load  ; Output Enable Source ; Output Enable Group ;
++------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+; cout ; 5     ; --       ; 1   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; s[0] ; 9     ; --       ; 1   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; s[1] ; 20    ; --       ; 2   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; s[2] ; 16    ; --       ; 2   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; s[3] ; 12    ; --       ; 1   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; s[4] ; 6     ; --       ; 1   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; s[5] ; 11    ; --       ; 1   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; s[6] ; 8     ; --       ; 1   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; s[7] ; 4     ; --       ; 1   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
++------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; All Package Pins                                                                                      ;
++----------+------------+----------+----------------+--------+--------------+---------+-----------------+
+; Location ; Pad Number ; I/O Bank ; Pin Name/Usage ; Dir.   ; I/O Standard ; Voltage ; User Assignment ;
++----------+------------+----------+----------------+--------+--------------+---------+-----------------+
+; 1        ; 0          ; --       ; A[6]           ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 2        ; 1          ; --       ; B[3]           ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 3        ; 2          ; --       ; VCCINT         ; power  ;              ; 3.3V    ;                 ;
+; 4        ; 3          ; --       ; s[7]           ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 5        ; 4          ; --       ; cout           ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 6        ; 5          ; --       ; s[4]           ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 7        ; 6          ; --       ; TDI            ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 8        ; 7          ; --       ; s[6]           ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 9        ; 8          ; --       ; s[0]           ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 10       ; 9          ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 11       ; 10         ; --       ; s[5]           ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 12       ; 11         ; --       ; s[3]           ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 13       ; 12         ; --       ; TMS            ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 14       ; 13         ; --       ; A[3]           ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 15       ; 14         ; --       ; VCCIO          ; power  ;              ; 3.3V    ;                 ;
+; 16       ; 15         ; --       ; s[2]           ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 17       ; 16         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 18       ; 17         ; --       ; B[1]           ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 19       ; 18         ; --       ; B[4]           ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 20       ; 19         ; --       ; s[1]           ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 21       ; 20         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 22       ; 21         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 23       ; 22         ; --       ; VCCINT         ; power  ;              ; 3.3V    ;                 ;
+; 24       ; 23         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 25       ; 24         ; --       ; B[5]           ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 26       ; 25         ; --       ; A[7]           ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 27       ; 26         ; --       ; A[2]           ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 28       ; 27         ; --       ; B[0]           ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 29       ; 28         ; --       ; A[1]           ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 30       ; 29         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 31       ; 30         ; --       ; Cin            ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 32       ; 31         ; --       ; TCK            ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 33       ; 32         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 34       ; 33         ; --       ; B[7]           ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 35       ; 34         ; --       ; VCCIO          ; power  ;              ; 3.3V    ;                 ;
+; 36       ; 35         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 37       ; 36         ; --       ; A[5]           ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 38       ; 37         ; --       ; TDO            ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 39       ; 38         ; --       ; A[0]           ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 40       ; 39         ; --       ; A[4]           ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 41       ; 40         ; --       ; B[2]           ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 42       ; 41         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 43       ; 42         ; --       ; GND+           ;        ;              ;         ;                 ;
+; 44       ; 43         ; --       ; B[6]           ; input  ; 3.3-V LVTTL  ;         ; N               ;
++----------+------------+----------+----------------+--------+--------------+---------+-----------------+
+Note: Pin directions (input, output or bidir) are based on device operating in user mode.
+
+
++--------------------------------------------------------------------------------------------------+
+; I/O Standard                                                                                     ;
++--------------+------------+----------------------+-------------------+-------------------+-------+
+; I/O Standard ; Input Vref ; Dedicated Input Pins ; Pins in I/O Bank1 ; Pins in I/O Bank2 ; Total ;
++--------------+------------+----------------------+-------------------+-------------------+-------+
+; 3.3-V LVTTL  ; -          ; 3                    ; 0                 ; 0                 ; 3     ;
++--------------+------------+----------------------+-------------------+-------------------+-------+
+
+
++--------------------------------------------------------------------+
+; Dedicated Inputs I/O                                               ;
++------+-------+-------+-------+--------------+------------+---------+
+; Name ; Pin # ; Type  ; VCCIO ; I/O Standard ; Input Vref ; Current ;
++------+-------+-------+-------+--------------+------------+---------+
+; A[6] ; 1     ; Input ; --    ; 3.3-V LVTTL  ; -          ; 0 mA    ;
+; B[3] ; 2     ; Input ; --    ; 3.3-V LVTTL  ; -          ; 0 mA    ;
+; B[6] ; 44    ; Input ; --    ; 3.3-V LVTTL  ; -          ; 0 mA    ;
++------+-------+-------+-------+--------------+------------+---------+
+
+
++-----------------------------------------------+
+; Output Pin Default Load For Reported TCO      ;
++--------------+-------+------------------------+
+; I/O Standard ; Load  ; Termination Resistance ;
++--------------+-------+------------------------+
+; 3.3-V LVTTL  ; 10 pF ; Not Available          ;
+; 3.3-V LVCMOS ; 10 pF ; Not Available          ;
+; 3.3-V PCI    ; 10 pF ; 25 Ohm (Parallel)      ;
+; 2.5 V        ; 10 pF ; Not Available          ;
++--------------+-------+------------------------+
+Note: User assignments will override these defaults. The user specified values are listed in the Output Pins and Bidir Pins tables.
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                          ;
++-------------------------------------------+------------+------+-------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; Macrocells ; Pins ; Full Hierarchy Name                                                                             ; Library Name ;
++-------------------------------------------+------------+------+-------------------------------------------------------------------------------------------------+--------------+
+; |fullAdder8Bit_BeachWilliam               ; 20         ; 30   ; |fullAdder8Bit_BeachWilliam                                                                     ; work         ;
+;    |fullAdder4bit_BeachWilliam:adder1|    ; 9          ; 0    ; |fullAdder8Bit_BeachWilliam|fullAdder4bit_BeachWilliam:adder1                                   ; work         ;
+;       |FullAdder_1BitBeachWilliam:adder1| ; 1          ; 0    ; |fullAdder8Bit_BeachWilliam|fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder1 ; work         ;
+;       |FullAdder_1BitBeachWilliam:adder2| ; 2          ; 0    ; |fullAdder8Bit_BeachWilliam|fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder2 ; work         ;
+;       |FullAdder_1BitBeachWilliam:adder3| ; 3          ; 0    ; |fullAdder8Bit_BeachWilliam|fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder3 ; work         ;
+;       |FullAdder_1BitBeachWilliam:adder4| ; 3          ; 0    ; |fullAdder8Bit_BeachWilliam|fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder4 ; work         ;
+;    |fullAdder4bit_BeachWilliam:adder2|    ; 11         ; 0    ; |fullAdder8Bit_BeachWilliam|fullAdder4bit_BeachWilliam:adder2                                   ; work         ;
+;       |FullAdder_1BitBeachWilliam:adder1| ; 2          ; 0    ; |fullAdder8Bit_BeachWilliam|fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder1 ; work         ;
+;       |FullAdder_1BitBeachWilliam:adder2| ; 5          ; 0    ; |fullAdder8Bit_BeachWilliam|fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2 ; work         ;
+;       |FullAdder_1BitBeachWilliam:adder3| ; 1          ; 0    ; |fullAdder8Bit_BeachWilliam|fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder3 ; work         ;
+;       |FullAdder_1BitBeachWilliam:adder4| ; 3          ; 0    ; |fullAdder8Bit_BeachWilliam|fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder4 ; work         ;
++-------------------------------------------+------------+------+-------------------------------------------------------------------------------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Non-Global High Fan-Out Signals                                                               ;
++-------------------------------------------------------------------------------------+---------+
+; Name                                                                                ; Fan-Out ;
++-------------------------------------------------------------------------------------+---------+
+; B[0]                                                                                ; 11      ;
+; A[0]                                                                                ; 11      ;
+; B[1]                                                                                ; 10      ;
+; Cin                                                                                 ; 10      ;
+; A[1]                                                                                ; 9       ;
+; B[2]                                                                                ; 8       ;
+; B[3]                                                                                ; 6       ;
+; A[3]                                                                                ; 6       ;
+; A[2]                                                                                ; 6       ;
+; B[5]                                                                                ; 5       ;
+; B[4]                                                                                ; 5       ;
+; A[5]                                                                                ; 5       ;
+; A[4]                                                                                ; 5       ;
+; B[7]                                                                                ; 4       ;
+; B[6]                                                                                ; 4       ;
+; A[7]                                                                                ; 4       ;
+; A[6]                                                                                ; 4       ;
+; fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder4|s~2bal          ; 4       ;
+; fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder4|s~1bal          ; 4       ;
+; fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder4|s~3             ; 4       ;
+; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|input1~2sexpbal ; 3       ;
+; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|cout~13         ; 3       ;
+; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|s~5             ; 3       ;
+; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder1|s~4             ; 3       ;
+; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder4|cout~10         ; 1       ;
+; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|cout~14         ; 1       ;
+; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|s~15            ; 1       ;
+; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder1|s~14            ; 1       ;
+; fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder3|s~14            ; 1       ;
+; fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder3|s~8             ; 1       ;
+; fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder2|s~8             ; 1       ;
+; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder4|cout~8          ; 1       ;
+; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder4|s~3             ; 1       ;
+; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder4|s~2             ; 1       ;
+; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder4|s~1             ; 1       ;
+; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder3|s~1             ; 1       ;
+; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|s~8             ; 1       ;
+; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|s~7             ; 1       ;
+; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|s~6             ; 1       ;
+; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder1|s~7             ; 1       ;
+; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder1|s~6             ; 1       ;
+; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder1|s~5             ; 1       ;
+; fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder4|s~6             ; 1       ;
+; fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder4|s~5             ; 1       ;
+; fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder4|s~4             ; 1       ;
+; fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder3|s~1             ; 1       ;
+; fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder2|s~1             ; 1       ;
+; fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder1|s~1             ; 1       ;
++-------------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------+
+; Interconnect Usage Summary                     ;
++----------------------------+-------------------+
+; Interconnect Resource Type ; Usage             ;
++----------------------------+-------------------+
+; Output enables             ; 0 / 6 ( 0 % )     ;
+; PIA buffers                ; 28 / 144 ( 19 % ) ;
++----------------------------+-------------------+
+
+
++----------------------------------------------------------------------+
+; LAB Macrocells                                                       ;
++----------------------------------------+-----------------------------+
+; Number of Macrocells  (Average = 5.00) ; Number of LABs  (Total = 2) ;
++----------------------------------------+-----------------------------+
+; 0                                      ; 2                           ;
+; 1                                      ; 0                           ;
+; 2                                      ; 0                           ;
+; 3                                      ; 0                           ;
+; 4                                      ; 0                           ;
+; 5                                      ; 1                           ;
+; 6                                      ; 0                           ;
+; 7                                      ; 0                           ;
+; 8                                      ; 0                           ;
+; 9                                      ; 0                           ;
+; 10                                     ; 0                           ;
+; 11                                     ; 0                           ;
+; 12                                     ; 0                           ;
+; 13                                     ; 0                           ;
+; 14                                     ; 0                           ;
+; 15                                     ; 1                           ;
++----------------------------------------+-----------------------------+
+
+
++---------------------------------------------------------+
+; Parallel Expander                                       ;
++--------------------------+------------------------------+
+; Parallel Expander Length ; Number of Parallel Expanders ;
++--------------------------+------------------------------+
+; 0                        ; 0                            ;
+; 1                        ; 5                            ;
+; 2                        ; 1                            ;
++--------------------------+------------------------------+
+
+
++-------------------------------------------------------------------------------+
+; Shareable Expander                                                            ;
++-------------------------------------------------+-----------------------------+
+; Number of shareable expanders  (Average = 2.75) ; Number of LABs  (Total = 1) ;
++-------------------------------------------------+-----------------------------+
+; 0                                               ; 3                           ;
+; 1                                               ; 0                           ;
+; 2                                               ; 0                           ;
+; 3                                               ; 0                           ;
+; 4                                               ; 0                           ;
+; 5                                               ; 0                           ;
+; 6                                               ; 0                           ;
+; 7                                               ; 0                           ;
+; 8                                               ; 0                           ;
+; 9                                               ; 0                           ;
+; 10                                              ; 0                           ;
+; 11                                              ; 1                           ;
++-------------------------------------------------+-----------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Logic Cell Interconnection                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
++-----+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; LAB ; Logic Cell ; Input                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ; Output                                                                                                                                                                                                                                                                                                 ;
++-----+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+;  A  ; LC4        ; A[0], B[0], Cin                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ; s[0]                                                                                                                                                                                                                                                                                                   ;
+;  A  ; LC1        ; B[2], A[2], fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder4|s~3, B[1], A[1], fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder4|s~2bal, B[0], A[0], fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder4|s~1bal, Cin, fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder4|s~4, fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder4|s~5                                                                                                                                                                                                                             ; s[3]                                                                                                                                                                                                                                                                                                   ;
+;  A  ; LC11       ; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder1|s~14, fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder1|s~4, B[2], A[2], fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder4|s~3, B[1], A[1], fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder4|s~2bal, B[0], A[0], fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder4|s~1bal, Cin, fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder1|s~5, fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder1|s~6                                                                          ; s[4]                                                                                                                                                                                                                                                                                                   ;
+;  A  ; LC3        ; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|s~15, fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|s~5, fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder1|s~4, B[2], A[2], fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder4|s~3, B[1], A[1], fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder4|s~2bal, B[0], A[0], fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder4|s~1bal, Cin, fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|s~6, fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|s~7 ; s[5]                                                                                                                                                                                                                                                                                                   ;
+;  A  ; LC7        ; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|cout~14, fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|s~5, B[3], A[3], fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder1|s~4, B[2], A[2], fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder4|s~3, B[1], A[1], fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder4|s~2bal, B[0], A[0], fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder4|s~1bal, Cin                                                                                                                                    ; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder3|s~1, fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder4|s~3, fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder4|cout~8                                                                           ;
+;  A  ; LC5        ; B[6], fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|cout~13, A[6], A[5], B[5], fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|input1~2sexpbal                                                                                                                                                                                                                                                                                                                                                                                                                                                               ; s[6]                                                                                                                                                                                                                                                                                                   ;
+;  A  ; LC16       ; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|cout~13, A[6], B[6], fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder4|s~1, fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder4|s~2, fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|input1~2sexpbal                                                                                                                                                                                                                                                                                                                         ; s[7]                                                                                                                                                                                                                                                                                                   ;
+;  A  ; LC14       ; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder4|cout~10, B[6], A[6], A[7], fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|cout~13, B[7], fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|input1~2sexpbal                                                                                                                                                                                                                                                                                                                                                                                  ; cout                                                                                                                                                                                                                                                                                                   ;
+;  A  ; LC10       ; B[3], A[3]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder1|s~7                                                                                                                                                                                                                                ;
+;  A  ; LC2        ; B[4], A[4], fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|s~5, B[3], A[3]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|s~8                                                                                                                                                                                                                                ;
+;  A  ; LC6        ; B[4], A[4], A[5], B[5]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|cout~13                                                                                                                                                                                                                            ;
+;  A  ; LC13       ; A[6], A[7], B[6], B[7]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder4|cout~8                                                                                                                                                                                                                             ;
+;  A  ; LC12       ; A[5], B[5]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ; fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder3|s~1, fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder4|s~3, fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder4|cout~8                                                                           ;
+;  A  ; LC8        ; A[0], B[0]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ; fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder4|s~6, fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder1|s~7, fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|s~8, fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|cout~13 ;
+;  A  ; LC9        ; A[1], B[1]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ; fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder4|s~6, fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder1|s~7, fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|s~8, fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2|cout~13 ;
+;  B  ; LC19       ; fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder2|s~8, B[1], B[0], A[0], Cin, A[1]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ; s[1]                                                                                                                                                                                                                                                                                                   ;
+;  B  ; LC25       ; fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder3|s~14, Cin, A[0], B[2], B[1], B[0], A[1], A[2]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ; s[2]                                                                                                                                                                                                                                                                                                   ;
+;  B  ; LC18       ; Cin, B[1], B[0], A[0]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ; fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder2|s~1                                                                                                                                                                                                                                ;
+;  B  ; LC23       ; Cin, B[0], B[2], B[1], A[1], A[0]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ; fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder3|s~14                                                                                                                                                                                                                               ;
+;  B  ; LC24       ; fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder3|s~8, B[0], A[0], B[2], A[1], B[1], Cin                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ; fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder3|s~1                                                                                                                                                                                                                                ;
++-----+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------+
+; Fitter Device Options                                         ;
++----------------------------------------------+----------------+
+; Option                                       ; Setting        ;
++----------------------------------------------+----------------+
+; Enable user-supplied start-up clock (CLKUSR) ; Off            ;
+; Enable device-wide reset (DEV_CLRn)          ; Off            ;
+; Enable device-wide output enable (DEV_OE)    ; Off            ;
+; Enable INIT_DONE output                      ; Off            ;
+; Configuration scheme                         ; Passive Serial ;
+; Security bit                                 ; Off            ;
+; Base pin-out file on sameframe device        ; Off            ;
++----------------------------------------------+----------------+
+
+
++-----------------+
+; Fitter Messages ;
++-----------------+
+Info: *******************************************************************
+Info: Running Quartus II Fitter
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Thu Nov 03 14:35:50 2022
+Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off FullAdder8Bit_BeachWilliam -c FullAdder8Bit_BeachWilliam
+Info: Selected device EPM3064ALC44-10 for design "FullAdder8Bit_BeachWilliam"
+Info: Quartus II Fitter was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 215 megabytes
+    Info: Processing ended: Thu Nov 03 14:35:51 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

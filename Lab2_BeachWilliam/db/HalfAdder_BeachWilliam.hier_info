@@ -1,0 +1,18 @@
+|FullAdder_1BitBeachWilliam
+A => s~0.IN0
+A => s~10.IN1
+A => s~14.IN0
+A => cout~4.IN0
+B => s~1.IN0
+B => s~5.IN1
+B => s~14.IN1
+B => cout~0.IN0
+Cin => s~3.IN1
+Cin => s~6.IN0
+Cin => s~15.IN1
+Cin => cout~0.IN1
+Cin => cout~4.IN1
+s <= s~18.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~7.DB_MAX_OUTPUT_PORT_TYPE
+
+

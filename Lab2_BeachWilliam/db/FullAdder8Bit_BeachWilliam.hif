@@ -1,0 +1,152 @@
+Quartus II
+Version 9.1 Build 222 10/21/2009 SJ Web Edition
+29
+1624
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+FullAdder8Bit_BeachWilliam
+# storage
+db|FullAdder8Bit_BeachWilliam.(0).cnf
+db|FullAdder8Bit_BeachWilliam.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+fulladder8bit_beachwilliam.vhd
+846f2604a485dcb76489287f168cba3
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# include_file {
+fulladderpackage.vhd
+104b2c9d3618bc71b2f91ce9043db21
+}
+# hierarchies {
+|
+}
+# lmf
+c:|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+fullAdder4bit_BeachWilliam
+# storage
+db|FullAdder8Bit_BeachWilliam.(2).cnf
+db|FullAdder8Bit_BeachWilliam.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+fulladder4bit_beachwilliam.vhd
+afbd9ac9df10db417c3e4c578737e7
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(a)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(b)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(s)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# include_file {
+fulladderpackage.vhd
+104b2c9d3618bc71b2f91ce9043db21
+}
+# hierarchies {
+fullAdder4bit_BeachWilliam:adder1
+fullAdder4bit_BeachWilliam:adder2
+}
+# lmf
+c:|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+FullAdder_1BitBeachWilliam
+# storage
+db|FullAdder8Bit_BeachWilliam.(1).cnf
+db|FullAdder8Bit_BeachWilliam.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+fulladder_1bitbeachwilliam.vhd
+d267d3dc7510df5387926d7add38ad2c
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder1
+fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder2
+fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder3
+fullAdder4bit_BeachWilliam:adder1|FullAdder_1BitBeachWilliam:adder4
+fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder1
+fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder2
+fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder3
+fullAdder4bit_BeachWilliam:adder2|FullAdder_1BitBeachWilliam:adder4
+}
+# lmf
+c:|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# complete
+

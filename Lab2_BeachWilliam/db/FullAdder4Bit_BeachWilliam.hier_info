@@ -1,0 +1,18 @@
+|FullAdder_1BitBeachWilliam
+A => input1.IN0
+A => input3.IN1
+A => input4.IN0
+A => input8.IN0
+B => input1.IN0
+B => input2.IN1
+B => input4.IN1
+B => input7.IN0
+Cin => input1.IN1
+Cin => input2.IN0
+Cin => input4.IN1
+Cin => input7.IN1
+Cin => input8.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
